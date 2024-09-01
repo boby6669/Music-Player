@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="images/fd.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <img src="Images/melody.jpg" alt="logo">
+            </div>
+            <a href="#">Home</a>
+            <a href="https://www.jiosaavn.com/shows/kahaaniya/1/SWXbXhBWwtA_">Search</a>
+            <a href="https://play.google.com/store/apps">Download app❗</a>
+            <a href="#">Sign in</a>
+            <a href="#" class="icon" onclick="shownav()" >
+                <i class="fa fa-bars"></i>
+            </a>
+            
+        </div>
+
+        <div id='player' class="player">
+            <div class="audio-container" id="audio-container">
+                <div class="audio-info">
+                    <h4 id="title">Melody</h4>
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+                <audio src="music/melody.mp3" id="audio"></audio>
+                <div class="img-container">
+                    <img src="Images/melody.jpg" alt="music-cover" id="cover">
+                </div>
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+        
+                </div>
+        
+            </div>
+
+        </div>
+
+        <div class="content">
+            
+            <div class="recently">
+
+                <h1>Recently Played</h1><br><br>
+                <div class="recently cont">
+          
+                    <a onclick="playthis(0);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Ishq De Fanniyar.jpg">
+                    </a>
+                    <a onclick="playthis(1);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/O MAAHI.jpg">
+                    </a>
+                    <a onclick="playthis(2);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/SAJNI  RE.jpg">
+                    </a>
+                    <a onclick="playthis(3);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Tum Se.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(4);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/CHALEYA.jpg">
+                    </a>
+                    <a onclick="playthis(5);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/SARKAR.jpg">
+                    </a><br><br>
+
+                </div>
+
+            </div>
+
+            <div class="recently">
+
+                <h1>New Releases</h1><br><br>
+                <div class="recently cont">
+          
+                    <a onclick="playthis(6);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Tere Sang Ishq Hua (YODHA).jpg">
+                    </a>
+                    <a onclick="playthis(7);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Akhiyaan Gulaab.jpg">
+                    </a>
+                    <a onclick="playthis(8);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/AAJ KI RAAT.jpg">
+                    </a>
+                    <a onclick="playthis(9);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/MURLI KI TAANO SI.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(10);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Chitta (SHIDDAT).jpg">
+                    </a>
+                    
+                    <a onclick="playthis(11);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/MANWA  LAAGE.jpg">
+                    </a>
+                    <a onclick="playthis(12);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Ve Kamleya.jpg">
+                    </a>
+                    <a onclick="playthis(13);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Tere Hawaale.jpg">
+                    </a>
+                    <a onclick="playthis(14);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Tum Kya Mile.jpg">
+                    </a>
+                    <a onclick="playthis(15);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Deva Deva.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(16);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Dekh Lena.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(17);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Tainu Khabar Nahi.jpg">
+                    </a>
+                    <a onclick="playthis(18);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Hum Toh Deewane.jpg">
+                    </a>
+                    <a onclick="playthis(19);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Falak Tu Garaj Tu.jpg">
+                    </a>
+                    <a onclick="playthis(20);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Kesariya Tera.jpg">
+                    </a>
+                    <a onclick="playthis(21);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Animal Satranga.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(22);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Dil Jhoom.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(23);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Tere Vaste Falak Se Main Chand Launga.jpg">
+                    </a>
+                    <a onclick="playthis(24);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Jeet Ka Geet.jpg">
+                    </a>
+                    <a onclick="playthis(25);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Bharat Ki Beti.jpg">
+                   </a>
+                    <a onclick="playthis(26);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Jeetega Jeetega India.jpg">
+                    </a>
+                    <a onclick="playthis(27);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Lehra Do 83.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(28);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Shaabaashiyaan Mission Mangal.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(29);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Yodha Tiranga.jpg">
+                    </a>
+                    <a onclick="playthis(30);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Jhoome Jo Pathaan.jpg">
+                    </a>
+                    <a onclick="playthis(31);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Tere Bin.jpg">
+                   </a>
+                    <a onclick="playthis(32);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Chogada Tara.jpg">
+                    </a>
+                    <a onclick="playthis(33);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Pehle Bhi Main.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(34);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Jug Jug Jeeve.jpg">
+                    </a>
+                    
+                    <a onclick="playthis(35);" ondblclick="pauseSong()" class="song" >
+                        <img src="Images/Sulthana.jpg">
+                    </a><br><br>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>
